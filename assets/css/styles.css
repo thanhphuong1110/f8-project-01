@@ -12,10 +12,19 @@ body{
     font-family: "Poppins", sans-serif;
 }
 /* HEADER */
-.header{
+.hero-wrap{
     position: relative;
     background: #E6F0FF;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.fixed-header {
+    background: #E6F0FF;
+    padding-top: 26px;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 /* Common */
 .content{
@@ -48,7 +57,8 @@ body{
 .navbar{
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 .navbar ul{
     display: flex;
